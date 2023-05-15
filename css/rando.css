@@ -1,11 +1,11 @@
-@import url("/css/global.css");
+@import url("/ProgrammationWeb/css/global.css");
 
 /*
 /ProgrammationWeb/css/global.css
 /ProgrammationWeb/html/img/familienurlaub-saalbach-d79b16be.jpeg
 */
 .detail{
-    background-image: url("/html/img/familienurlaub-saalbach-d79b16be.jpeg");
+    background-image: url("/ProgrammationWeb/html/img/familienurlaub-saalbach-d79b16be.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }

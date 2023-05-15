@@ -1,4 +1,4 @@
-@import url("/css/global.css");
+@import url("/ProgrammationWeb/css/global.css");
 
 .formulaire {
     text-align: center;
@@ -10,7 +10,7 @@
 /ProgrammationWeb/html/img/130544-Saalbach-Hinterglemm.webp
 */
 .arr{
-    background-image: url("/html/img/130544-Saalbach-Hinterglemm.webp");
+    background-image: url("/ProgrammationWeb/html/img/130544-Saalbach-Hinterglemm.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
