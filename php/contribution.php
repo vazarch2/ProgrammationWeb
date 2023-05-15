@@ -1,5 +1,5 @@
 <?php
-$result = array($_GET['nom'], $_GET['prenom'], $_GET['adresse'], $_GET['ville'], $_GET['code']);
+$result = array($_GET['nom'], $_GET['adresse'], $_GET['ville'], $_GET['code']);
 $default = array('Nom','Prénom','Adresse','Ville','Code postal');
 $bool=true;
 for($i=0;$i<count($result);$i++){
