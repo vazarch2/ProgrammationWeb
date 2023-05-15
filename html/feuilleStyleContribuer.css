@@ -1,0 +1,55 @@
+.arr{
+    background-image: url(130544-Saalbach-Hinterglemm.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    margin: 0px ;
+    padding: 0px;
+}
+.header{
+    background-color: #287265;
+    height: 80px;
+    margin: 10px;
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px ;
+}
+ul li a{
+    color:white;
+    letter-spacing: 0.1rem;
+}
+ul li a:hover{
+    color: brown;
+    text-decoration:underline ;
+}
+
+
+.fond{
+    background-image: url("Groupe-rando.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 140;
+}
+
+
+.menu li{
+float: left;
+padding: 35px ;
+}
+.menu li a{
+    text-decoration: none;
+  
+}
+
+form{
+    padding: 35px;
+    text-align: right;
+}
+input[type="search"]{
+    font-size: 17px;
+}
