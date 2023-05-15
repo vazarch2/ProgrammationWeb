@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="/css/contribution.css">
 </head>
 <body>
+<div class="header">
+    <nav>
+        <ul class="menu">
+            <li><a href="accueil.html" >Accueil</a></li>
+            <li><a href="rando.html" >Randonner</a></li>
+           <li><a href="contribution.html" class="actuel">Contribuer</a></li>
+        </ul>
+        <form>
+            <input type="search" name="re" placeholder="Recherche">
+        </form>
+    </nav>
+</div>
+<div>
+    <label>Saisissez vos coordonnées</label>
+    <form action="/php/contribution.php" method="get" class="formulaire">
+        <p><label>Nom</label><input type="text" name="nom" /></p>
+        <p><label>Adresse : </label><input type="text" name="adresse"/></p>
+        <p><label>Ville : </label><input type="text" name="ville"/></p>
+        <p><label>Code postal : </label><input type="number" name="code"/></p>
+        <p><button  type="submit">Go</button></p>
+    </form></div>
 
 </body>
 </html>

@@ -1,0 +1,9 @@
+@import url("/ProgrammationWeb/css/global.css");
+
+.fond{
+    background-image: url("/ProgrammationWeb/html/img/Groupe-rando.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
