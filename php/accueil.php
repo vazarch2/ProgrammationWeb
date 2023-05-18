@@ -1,6 +1,13 @@
  <?php
 
- if(isset($_POST["inscri"]))
+ if(isset($_POST["inscri "])){
+      $nom = $_POST["nom"] ;
+      $prenpm = $_POST['prenom'] ;
+      $pseudo = $_POST['pseudo'] ;
+      $mail = $_POST['mail'] ;
+      $motDePasse = $_POST['motDePasse'] ;
+
+ }
 
 
  ?>
@@ -10,14 +17,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="/css/contribution.css">
+    <link type="text/css" rel="stylesheet" href=" ">
 </head>
 <body>
 
 <form method="POST" action="">
 
 <label for="nom">Votre nom </label>
-<input type="text" id="nom" name="nom" placeholder="Entrez votre nom...">  <br/>
+<input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." required>  <br/>
 
 <label for="prenom">Votre prénom </label>
 <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom...">  <br/>
