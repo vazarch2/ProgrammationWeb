@@ -1,28 +1,33 @@
 <?php
-$result = array($_GET['nom'], $_GET['adresse'], $_GET['ville'], $_GET['code']);
-$default = array('Nom','Prénom','Adresse','Ville','Code postal');
-$bool=true;
-for($i=0;$i<count($result);$i++){
-    if(empty($result[$i])){
-        $bool=false;
-        $manq[]=$default[$i];
-    }
+$nom=strval($_GET['nom']);
+$adresse=strval($_GET['adresse']);
+$ville = strval($_GET['ville']);
+$code=$_GET['code'];
+
+$servername = "localhost";
+$database = "vazarch";
+$username = "root";
+$password = "password";
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connexion à la base de données établie avec succès.";
+} catch (PDOException $e) {
+    echo "Erreur de connexion à la base de données : " . $e->getMessage();
 }
-if(!$bool){
-    echo "<p>Some Values are missing</p>";
-    echo "<p>Please enter : ";
-    foreach ($manq as $item){
-        echo $item;
-    }
-    echo '</p>';
-}else{
-    echo '<label>Confirmation des coordonnées</label>';
-    echo '<table style="border: 1px solid;border-collapse: collapse">';
-    for($i=0;$i<count($result);$i++){
-        echo "<tr style='border: 1px solid'>
-        <td style='border: 1px solid'>$default[$i]</td>
-        <td>$result[$i]</td>
-        </tr>";
-    }
-    echo '</table>';
+try {
+    $stmt = $conn->prepare("INSERT INTO randonnee (nom,adresse,code_postal,ville)
+VALUES (:nom,:adresse,:code,:ville)");
+    $stmt->bindParam(':nom', $nom);
+    $stmt->bindParam(':adresse', $adresse);
+    $stmt->bindParam(':code', $code);
+    $stmt->bindParam(':ville', $ville);
+    $stmt->execute();
+
+    echo "Les données ont été insérées avec succès dans la base de données.";
+} catch (PDOException $e) {
+    echo "Erreur lors de l'insertion des données : " . $e->getMessage();
 }
+$conn=null;
+header("Location: " . "/ProgrammationWeb/html/contribution.html");
+exit();

@@ -4,13 +4,17 @@ SET FOREIGN_KEY_CHECKS=0;
 --
 -- Table structure for table `annotation`
 --
-
+DROP DATABASE IF EXISTS vazarch;
+CREATE DATABASE vazarch;
+CREATE USER 'vazarch'@'localhost' IDENTIFIED BY 'password';
 DROP TABLE IF EXISTS `randonnee`;
 CREATE TABLE `randonnee`
 (
-    `id`          int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `nom`         int(10) unsigned DEFAULT NULL,
-    `adresse`     int(10) unsigned NOT NULL,
-    `code_postal` int(10) unsigned DEFAULT NULL,
-    `ville`       int(10) unsigned DEFAULT NULL
+    `id`          int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `nom`         varchar(25),
+    `adresse`     varchar(25),
+    `code_postal` int(5) unsigned ,
+    `ville`       varchar(10)
 );
+
+INSERT INTO `randonnee`( `nom`, `adresse`, `code_postal`, `ville`) VALUES ('Grenoble','15 rue des moineaux','15','dav');
