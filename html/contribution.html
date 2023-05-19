@@ -17,14 +17,14 @@
 <div>
     <label>Saisissez les données de la randonnée</label>
     <form action="../php/contribution.php" method="post" class="formulaire" enctype="multipart/form-data">
-        <div><label>Nom : </label><input type="text" name="nom" required/></div>
-        <div><label>auteur: </label><input type="text" name="auteur"/></div>
-        <div><label>Adresse : </label><input type="text" name="adresse" required/></div>
-        <div><label>Ville : </label><input type="text" name="ville" required/></div>
-        <div><label>Code postal : </label><input type="number" name="code" required/></div>
-        <div><label>Description : </label><textarea  name="description" maxlength="250" autocapitalize="sentences"></textarea></div>
-        <div><label>Score (/10): </label><input type="number" name="score" min="0" max="10" required/></div>
-        <div><label>Photo : </label><input type="file" name="photo" /></div>
+        <div><label>Nom  </label><input type="text" name="nom" required/></div>
+        <div><label>auteur </label><input type="text" name="auteur"/></div>
+        <div><label>Adresse  </label><input type="text" name="adresse" required/></div>
+        <div><label>Ville  </label><input type="text" name="ville" required/></div>
+        <div><label>Code postal  </label><input type="number" name="code" required/></div>
+        <div><label>  </label><textarea placeholder="Description..." name="description" maxlength="225" autocapitalize="sentences"></textarea></div>
+        <div><label>Score </label><input placeholder="/10" type="number" name="score" min="0" max="10" required/></div>
+        <div><label>Photo  </label><input type="file" name="photo" /></div>
         <div><button  type="submit">Confirmer</button></div>
     </form></div>
 

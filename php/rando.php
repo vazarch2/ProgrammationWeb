@@ -60,13 +60,15 @@ $photo=$ligne[8];
     </section>
     <section >
         <h1>Description</h1>
-        <?php for($i=0;$i<5;$i++){
-            echo"<p>";
-            for($k=0;$k<50;$k++){
-                echo $description[$k];
-            }
-            echo"</p>";
+        <?php
+        echo"<p>";
+        for($i=1;$i<250;$i++){
+               echo $description[$i];
+               if($i%50==0){
+                   echo "-<br>";
+               }
         }
+        echo"</p>";
         ?>
     </section>
 </main>
