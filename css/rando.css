@@ -9,3 +9,35 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#etat-civil p {
+    margin: 0.5rem;
+}
+
+img {
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+    height: 12rem;
+}
+
+h1 {
+    clear: both;
+}
+
+dt {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+dd {
+    margin-left: 2rem;
+}
+
+.dates {
+    float: right;
+}
+main{
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.2);
+}

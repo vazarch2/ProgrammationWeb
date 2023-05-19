@@ -14,7 +14,11 @@ CREATE TABLE `randonnee`
     `nom`         varchar(25),
     `adresse`     varchar(25),
     `code_postal` int(5) unsigned ,
-    `ville`       varchar(10)
+    `ville`       varchar(10),
+    `description` varchar(250),
+    `auteur`      varchar(10),
+    `score`       int(4),
+    `photo`       blob
 );
 
 INSERT INTO `randonnee`( `nom`, `adresse`, `code_postal`, `ville`) VALUES ('Grenoble','15 rue des moineaux','15','dav');
