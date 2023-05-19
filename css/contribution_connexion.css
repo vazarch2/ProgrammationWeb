@@ -4,6 +4,15 @@
     text-align: center;
     margin-left: 25%;
     margin-right: 50%;
+    display: table;
+}
+.formulaire div {
+    display: table-row;
+}
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
 }
 /*
 /ProgrammationWeb/css/global.css

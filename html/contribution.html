@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="/css/contribution.css">
+    <link type="text/css" rel="stylesheet" href="/css/contribution_connexion.css">
 </head>
 <body class="arr">
 <div class="header">
@@ -15,17 +15,17 @@
     </nav>
 </div>
 <div>
+    <label>Saisissez les données de la randonnée</label>
     <form action="../php/contribution.php" method="post" class="formulaire" enctype="multipart/form-data">
-        <label>Saisissez vos coordonnées</label>
-        <p><label>Nom : </label><input type="text" name="nom" required/></p>
-        <p><label>auteur: </label><input type="text" name="auteur"/></p>
-        <p><label>Adresse : </label><input type="text" name="adresse" required/></p>
-        <p><label>Ville : </label><input type="text" name="ville" required/></p>
-        <p><label>Code postal : </label><input type="number" name="code" required/></p>
-        <p><label>Description : </label><textarea  name="description" maxlength="250" autocapitalize="sentences"></textarea></p>
-        <p><label>Score : </label><input type="number" name="score" min="0" max="10" required/></p>
-        <p><label>Photo : </label><input type="file" name="photo" /></p>
-        <p><button  type="submit">Go</button></p>
+        <div><label>Nom : </label><input type="text" name="nom" required/></div>
+        <div><label>auteur: </label><input type="text" name="auteur"/></div>
+        <div><label>Adresse : </label><input type="text" name="adresse" required/></div>
+        <div><label>Ville : </label><input type="text" name="ville" required/></div>
+        <div><label>Code postal : </label><input type="number" name="code" required/></div>
+        <div><label>Description : </label><textarea  name="description" maxlength="250" autocapitalize="sentences"></textarea></div>
+        <div><label>Score (/10): </label><input type="number" name="score" min="0" max="10" required/></div>
+        <div><label>Photo : </label><input type="file" name="photo" /></div>
+        <div><button  type="submit">Confirmer</button></div>
     </form></div>
 
 </body>
