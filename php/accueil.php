@@ -32,6 +32,7 @@ try {
 </div>
 <div class='scroller'>
     <?php
+    //-----Affichage du tableau-----//
     try{
         $request = "SELECT id,nom, adresse,code_postal,ville FROM randonnee ORDER BY nom,adresse";
         $result=$conn->query($request);
@@ -39,7 +40,12 @@ try {
         echo "Erreur lors de la récupération des données : " . $e->getMessage();
     }
     echo "<div class='table'>";
-
+    echo "<div id='first_row'>";
+    echo "<p>Nom</p>
+    <p>Adresse</p>
+    <p>Code postal</p>
+    <p>Ville</p>";
+    echo "</div>";
     while($ligne = $result->fetch(PDO::FETCH_NUM)) {
         echo "<div class='row'><a href='rando.php?id=$ligne[0]'>";
         for($i=1; $i<count($ligne); $i++) {

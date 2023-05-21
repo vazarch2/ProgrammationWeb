@@ -62,8 +62,8 @@ $photo=$ligne[8];
         <h1>Description</h1>
         <?php
         echo"<p>";
-        for($i=1;$i<250;$i++){
-               echo $description[$i];
+        for($i=1;$i<251;$i++){
+               echo $description[$i-1];
                if($i%50==0){
                    echo "-<br>";
                }
