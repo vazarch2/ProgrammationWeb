@@ -2,7 +2,7 @@
 //---Info serveur-----//
 $servername = "localhost";
 $database = "vazarch";
-$username = "root";
+$username = "vazarch";
 $password = "password";
 
 //---Connection au serveur-----//
@@ -43,7 +43,7 @@ $photo=$ligne[8];
 <div class="header">
     <nav>
         <ul class="menu">
-            <li><a href="../html/accueil.html" >Randonner</a></li>
+            <li><a href="accueil.php" >Randonner</a></li>
             <li><a href="../html/contribution.html">Contribuer</a></li>
         </ul>
     </nav>
@@ -52,7 +52,7 @@ $photo=$ligne[8];
     <!-- le contenu de la page -->
     <section id="randonnee">
         <?php echo "<h1>$nom</h1>"?>
-        <?php echo "<img src='$photo' />"?>
+        <?php echo "<img src='$photo'  alt='' />"?>
         <?php echo "<p>$auteur</p>"?>
         <?php echo "<p>$score/10</p>"?>
         <?php echo"<p>$adresse</p>"?>

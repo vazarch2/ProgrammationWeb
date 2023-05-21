@@ -6,7 +6,9 @@ SET FOREIGN_KEY_CHECKS=0;
 --
 DROP DATABASE IF EXISTS vazarch;
 CREATE DATABASE vazarch;
+DROP USER if exists 'vazarch'@'localhost';
 CREATE USER 'vazarch'@'localhost' IDENTIFIED BY 'password';
+GRANT SELECT, INSERT, UPDATE, DELETE, FILE ON *.* TO 'vazarch'@'localhost';
 DROP TABLE IF EXISTS `randonnee`;
 CREATE TABLE `randonnee`
 (
@@ -20,5 +22,3 @@ CREATE TABLE `randonnee`
     `score`       int(4),
     `photo`       blob
 );
-
-INSERT INTO `randonnee`( `nom`, `adresse`, `code_postal`, `ville`) VALUES ('Grenoble','15 rue des moineaux','15','dav');

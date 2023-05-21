@@ -7,3 +7,33 @@
     height: 600px;
 }
 
+.scroller {
+    width: 600px;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: thin;
+    border: solid;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.table {
+    width: 600px;
+    display: table;
+    border: 1px solid;
+}
+
+.row {
+    width: 600px;
+    display: table-row;
+}
+
+.table p {
+    text-decoration: none;
+    width: 150px;
+    color: black;
+    display: table-cell;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+

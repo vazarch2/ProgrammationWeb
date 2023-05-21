@@ -2,7 +2,7 @@
 //---Info serveur-----//
 $servername = "localhost";
 $database = "vazarch";
-$username = "root";
+$username = "vazarch";
 $password = "password";
 
 //---Récupération du formulaire-----//
