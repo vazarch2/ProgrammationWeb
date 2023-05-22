@@ -1,9 +1,6 @@
 SET NAMES 'utf8' COLLATE 'utf8_general_ci';
 SET FOREIGN_KEY_CHECKS=0;
 
---
--- Table structure for table `annotation`
---
 DROP DATABASE IF EXISTS vazarch;
 CREATE DATABASE vazarch;
 DROP USER if exists 'vazarch'@'localhost';
