@@ -16,24 +16,16 @@
         </nav>
    </div>
    <div>
-       <form method="POST" action="" class="formulaire">
+       <form method="POST" action="../php/Gestion_Connexion.php" class="formulaire">
 
-           <label for="nom">Votre nom </label>
-           <input type="text" id="nom" name="nom" placeholder="Entrez votre nom..." required>  <br/>
+               <label for="username">Identifiant</label>
+               <input type="text" name="username" id="username"> <br>
 
-           <label for="prenom">Votre prénom </label>
-           <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom...">  <br/>
 
-           <label for="pseudo">Votre pseudo </label>
-           <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo...">  <br/>
+               <input type="checkbox" name="newuser" id="newuser"> <br>
+               <label for="username">Créer un nouveau compte </label>
 
-           <label for="mail">Votre e-mail </label>
-           <input type="text" id="mail" name="mail" placeholder="Entrez votre e-mail...">  <br/>
-
-           <label for="motDePasse">Votre Mot De Passe </label>
-           <input type="password" id="motDePasse" name="motDePasse" placeholder="Entrez votre Mot De Passe...">  <br/>
-
-           <input type="submit" value="M'inscrire" name="inscri">
+               <input type="submit" name="submit" value="Se connecter">
 
        </form>
    </div>
